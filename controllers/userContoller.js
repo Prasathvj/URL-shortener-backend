@@ -83,7 +83,7 @@ const forgotPassword = async(req,res)=>{
         await user.save()
 
         //create reset url
-        const resetUrl = `http://3000/reset/password/${resetToken}`
+        const resetUrl = `https://url-shortener-official.netlify.app/reset/password/${resetToken}`
 
         const message = `Your password reset url is as follows \n\n 
         ${resetUrl} \n\n If you have not requested this email, then ignore it.`;
